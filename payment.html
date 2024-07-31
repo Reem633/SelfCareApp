@@ -25,19 +25,19 @@
         <section class="payment">
             <h2>Payment Methods</h2>
             <p>Select your preferred payment method:</p>
-            <div class="payment-method">
+            <div class="payment-method" onclick="selectPaymentMethod('visa')">
                 <h3>Visa</h3>
                 <img src="visa-new-20215093.jpg" alt="Visa">
             </div>
-            <div class="payment-method">
+            <div class="payment-method" onclick="selectPaymentMethod('mastercard')">
                 <h3>Mastercard</h3>
                 <img src="1280px-MasterCard_Logo.svg.png" alt="Mastercard">
             </div>
-            <div class="payment-method">
+            <div class="payment-method" onclick="selectPaymentMethod('paypal')">
                 <h3>PayPal</h3>
                 <img src="Paypal_2014_logo.png" alt="PayPal">
             </div>
-            <div class="payment-method">
+            <div class="payment-method" onclick="selectPaymentMethod('fawry')">
                 <h3>Fawry</h3>
                 <img src="myfawry_c-2-300x300.png" alt="Fawry">
             </div>
@@ -47,5 +47,11 @@
         <p>&copy; 2024 Our Self-Care App. All rights reserved.</p>
         <p>Website by Yassin, Kareem, Reem, and Muhannad</p>
     </footer>
+    <script>
+        function selectPaymentMethod(method) {
+            alert('You selected ' + method + ' as your payment method.');
+            // Redirect to a real payment processing page or handle the payment process here.
+        }
+    </script>
 </body>
 </html>
