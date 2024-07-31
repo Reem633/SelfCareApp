@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plans - MVP Self-Care App</title>
+    <title>Plans - Our Self-Care App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,11 +24,25 @@
     <main>
         <section class="plans">
             <h2>Our Plans</h2>
-            <p>Explore our personalized self-care plans designed for you.</p>
+            <div class="plan-item">
+                <h3>Free Package</h3>
+                <p>Access to minimum mental health services including basic mood tracking and community support.</p>
+                <button onclick="window.location.href='payment.html'">Choose Free</button>
+            </div>
+            <div class="plan-item">
+                <h3>Starter Package - 1000 EGP</h3>
+                <p>Includes personalized self-care plans, advanced mood tracking, and priority community support.</p>
+                <button onclick="window.location.href='payment.html'">Choose Starter</button>
+            </div>
+            <div class="plan-item">
+                <h3>Premium Package - 3000 EGP</h3>
+                <p>Access to all services including personalized plans, detailed mood analysis, 24/7 support, and exclusive resources.</p>
+                <button onclick="window.location.href='payment.html'">Choose Premium</button>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 MVP Self-Care App. All rights reserved.</p>
+        <p>&copy; 2024 Our Self-Care App. All rights reserved.</p>
         <p>Website by Yassin, Kareem, Reem, and Muhannad</p>
     </footer>
 </body>
