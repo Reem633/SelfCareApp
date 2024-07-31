@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - MVP Self-Care App</title>
+    <title>Contact - Our Self-Care App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <div class="logo">
+            <img src="Logo.jpg" alt="Logo">
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,22 +24,26 @@
     <main>
         <section class="contact">
             <h2>Contact Us</h2>
-            <form action="#">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
+            <form action="submit_contact_form.html" method="post">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" required>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" required>
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="billing">Billing</option>
+                </select>
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
+                <textarea id="message" name="message" rows="4" required></textarea>
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 MVP Self-Care App. All rights reserved.</p>
+        <p>&copy; 2024 Our Self-Care App. All rights reserved.</p>
         <p>Website by Yassin, Kareem, Reem, and Muhannad</p>
     </footer>
 </body>
