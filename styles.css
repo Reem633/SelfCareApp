@@ -2,47 +2,48 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #7fcd91;
+    background-color: #4CAF50;
     color: white;
     padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
     height: 50px;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-around;
 }
 
-nav ul li {
+header nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-main {
-    padding: 2rem;
-}
-
 .hero {
     text-align: center;
-    background-color: #b4e197;
-    padding: 2rem;
+    background-color: #e0f7fa;
+    padding: 2rem 0;
 }
 
 .hero img {
@@ -50,19 +51,22 @@ main {
     height: auto;
 }
 
-.services, .plans, .payment, .contact {
+.services, .plans, .ai-coach, .contact {
+    padding: 2rem 0;
+    background-color: white;
     margin: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.service-item, .plan-item, .payment-method {
-    background-color: #e6f2ff;
-    border: 1px solid #ccc;
+.service-item, .plan-item, .ai-coach-item {
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
 button {
-    background-color: #7fcd91;
+    background-color: #4CAF50;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
@@ -72,16 +76,17 @@ button {
 }
 
 button:hover {
-    background-color: #66b379;
+    background-color: #45a049;
 }
 
 footer {
-    background-color: #7fcd91;
+    background-color: #4CAF50;
     color: white;
     text-align: center;
     padding: 1rem 0;
-    width: 100%;
     position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .payment-method img {
@@ -90,3 +95,13 @@ footer {
     display: block;
     margin: 0 auto;
 }
+
+.container footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container footer p {
+    margin: 0.5rem 0;
+    }
